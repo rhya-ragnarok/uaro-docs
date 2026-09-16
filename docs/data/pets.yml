@@ -1,0 +1,18 @@
+poring:
+  mob: "1725"
+  food: "531"
+  taming_item: "7821"
+  accessory: "10013"
+  bonus:
+    cordial: "LUK +3, CRIT +1"
+    loyal: "LUK +3, CRIT +1"
+  capture_rate: "20%"
+  evolved: false
+  evolvable: true
+  evolution:
+    mob: "1090"
+    requirements:
+      - item: "610"
+        amount: 10
+      - item: "7821"
+        amount: 3

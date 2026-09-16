@@ -1,0 +1,8 @@
+# Mob lookup table, keyed by mob id — separate id space from items.yml
+"1725":
+  name: "Poring"
+  img: "1725.gif"
+
+"1090":
+  name: "Mastering"
+  img: "1090.gif"

@@ -1,0 +1,16 @@
+# Item lookup table, keyed by item id — referenced by id from pets.yml
+"531":
+  name: "Apple Juice"
+  img: "531.gif"
+
+"7821":
+  name: "Unripe Apple"
+  img: "7821.gif"
+
+"10013":
+  name: "Backpack"
+  img: "10013.gif"
+
+"610":
+  name: "Yggdrasil Leaf"
+  img: "610.gif"
