@@ -129,6 +129,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+mkdocs-venv/
 
 # Spyder project settings
 .spyderproject
@@ -173,3 +174,6 @@ AGENTS.md
 .github/copilot-instructions.md
 .copilotignore
 .vscode/settings.json
+
+# Local testing
+test/
