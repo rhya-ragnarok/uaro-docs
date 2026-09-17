@@ -24,8 +24,9 @@ def define_env(env):
     @env.macro
     def pets_table_test():
         header = (
-            "| Pets | Food | Taming Item | Accessory | Equip Bonus | Capture Rates |\n"
-            "|---|---|---|---|---|---|"
+            "| Pet | Food | Taming Item | Accessory | Awkward | Neutral | Cordial | Loyal | "
+            "Capture Rate | Evolved | Evolvable | Evolves To | Requirements |\n"
+            "|---|---|---|---|---|---|---|---|---|---|---|---|---|"
         )
         rows = []
         for pet in pets.values():
@@ -33,6 +34,17 @@ def define_env(env):
             food = _resolve(items, pet["food"], "item")
             taming_item = _resolve(items, pet["taming_item"], "item")
             accessory = _resolve(items, pet["accessory"], "item") if pet.get("accessory") else "None"
-            bonus = pet["bonus"].get("loyal") or pet["bonus"].get("cordial") or ""
-            rows.append(f"| {mob} | {food} | {taming_item} | {accessory} | {bonus} | {pet['capture_rate']} |")
+            bonus = pet["bonus"]
+            evolution = pet.get("evolution")
+            evolved_mob = _resolve(mobs, evolution["mob"], "mob") if evolution else "None"
+            requirements = "<br>".join(
+                f"{_resolve(items, requirement['item'], 'item')} - {requirement['amount']}"
+                for requirement in evolution.get("requirements", [])
+            ) if evolution else "None"
+            rows.append(
+                f"| {mob} | {food} | {taming_item} | {accessory} | {bonus.get('awkward', 'None')} | "
+                f"{bonus.get('neutral', 'None')} | {bonus.get('cordial', 'None')} | "
+                f"{bonus.get('loyal', 'None')} | {pet['capture_rate']} | {pet['evolved']} | "
+                f"{pet['evolvable']} | {evolved_mob} | {requirements} |"
+            )
         return "\n".join([header, *rows])

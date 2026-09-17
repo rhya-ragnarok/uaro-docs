@@ -41,9 +41,8 @@ To enable auto-feed:
 
 ## Non-evolved Pets
 
-| Pets                   | Food                     | Taming Item                   | Accessory                   | Equip Bonus                      | Capture Rates |
-|------------------------|--------------------------|-------------------------------|-----------------------------|----------------------------------|---------------|
-| ![Poring](img/1725.gif) Poring | ![Apple Juice](img/531.gif) Apple Juice | ![Unripe Apple](img/7821.gif) Unripe Apple | ![Backpack](img/10013.gif) Backpack | LUK +3, CRIT +1 | 20% |
+{{ pets_table_test() }}
+<!-- TEST: Poring row above is macro-rendered from docs/data/*.yml; row below unchanged for comparison -->
 | ![Drops](img/1113.gif) Drops        | ![Yellow Herb](img/508.gif) Yellow Herb      | ![Orange Juice](img/620.png) Orange Juice      | ![Backpack](img/10013.gif) Backpack      | HIT +5, ATK +5                         | 15% |
 | ![Poporing](img/1031.gif) Poporing  | ![Green Herb](img/511.png) Green Herb       | ![Bitter Herb](img/621.png) Bitter Herb       | ![Backpack](img/10013.gif) Backpack      | LUK +2, Poison Resistance +10%         | 10% |
 | ![Lunatic](img/1063.gif) Lunatic    | ![Carrot Juice](img/534.png) Carrot Juice   | ![Rainbow Carrot](img/622.png) Rainbow Carrot | ![Silk Ribbon](img/10007.png) Silk Ribbon | ATK +3, CRIT +3                        | 15% |

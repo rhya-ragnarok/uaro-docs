@@ -170,6 +170,7 @@ markdown_extensions:
 # Plugins
 plugins:
   - search  # Built-in search functionality for MkDocs
+  - macros  # TEST: renders pet table rows from docs/data/*.yml (Poring/Mastering validation slice)
 
 # Extra configurations (logo, favicon, social links, analytics)
 extra:
