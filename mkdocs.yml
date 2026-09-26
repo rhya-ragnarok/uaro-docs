@@ -13,7 +13,12 @@ theme:
     - navigation.sections
     - navigation.expand
     - navigation.footer
-    - toc.integrate
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.instant
+    - navigation.indexes
+    - navigation.path
+    - toc.follow
     - search.suggest
     - search.highlight
     - content.tabs
@@ -35,71 +40,89 @@ theme:
       accent: blue
 
 # Navigation setup
-nav: 
-  - 👋 Welcome to uaRO: index.md
-  - ℹ️ Server Information: Server_Info.md
-  - 📖 Server Rules ↗: https://uaro.net/cp/?module=service&action=tos
-  - 🌳 Donations: Donations.md 
-  - 🧵 Patch Notes: All_Patch_Notes.md 
-  - 🚀 Download uaRO ↗: https://www.uaro.net/cp/?module=service&action=downloads
-  - 👾 Join us on Discord ↗: https://discord.gg/uaro-the-world-of-your-dream-702960460168953946
-  - Getting Started: 
-    - ⭐ How to start: How_To_Start.md 
-    - ⚙️ Commands: Commands.md
-    - 🌱 Beginner Guide: Beginner_Guide.md 
-    - 🦋 QOL Improvements: Improvements.md
-    - 🎁 Guild Starter Support System: Guild-Starter-Support-System.md
-    - 🛟 Troubleshooting: Troubleshooting.md
-    - 💬 FAQ: FAQ.md
-  - Key Features:
-    - 🏡 Main Office: Main_Office.md
-    - 🐱 Cute Pet System: Pet_System.md
-    - ⚔️ Hunting Missions: Hunting_Mission.md
-    - 💖 Poring Coin System: Poring_Coins_System.md
-    - 🎉 Repeatable Quests: Repeatable_Quests.md 
-    - 💰 Vendor System: Vendor_System.md
-    - 🌀 Warper System: Warper_System.md
-  - Enhancements: 
-    - 💤 Adventurer Inns: Inns.md
-    - 🔔 Attendance Rewards: Attendance_System.md
-    - 🎟️ Card Exchange: Card_Exchange.md 
-    - 🔮 Class Changes: Class_Changes.md
-    - 🍬 Convenient Dealers: Dealers.md
-    - 🧚 Custom NPCs: Custom_NPC.md
-    - 🎭 Costume Converter: Costume_Converter.md
-    - 👒 Headgear Quests: Dimonka_Headgear_Quest.md 
-    - 🕥 Hourly Rewards: Hourly_Rewards_System.md 
-    - 👕 Item Changes: Item_Changes.md
-    - 📦 Expanded Class Weapons: Expanded-Class-Weapons.md
-    - 🔪 Mercenary System: Mercenary_System.md 
-    - 💎 Modified Sales Prices: Modified_Sales_Prices.md 
-    - 🗺️ Navigation System: Navigation_System.md 
-    - 🐣 Remastered Novice Grounds: Remastered_Novice_Location.md 
-  - Dungeons: 
-    - 🧪 Biolabs 4: Biolab4.md 
-    - 👻 Old Glast Heim: Old_Glast_Heim.md
-  - Instances:
-    - 🗂️ Instance Guide: Instance_Guide.md
-    - ⏳ Endless Cellar: Endless_Cellar.md 
-    # - Endless Tower: Endless_Tower.md 
-    - 🎁 Horror Toy Factory: Horror_Toy_Factory.md 
-    - ⚔️ Eternal Bastion: Eternal_Bastion.md
-    # - Wolfchev's Laboratory: Wolfchevs_Lab.md 
-    # - Sealed Shrine: Sealed_Shrine.md
-  - New World:
-    # - New World Guide: New_World_Guide.md
-    - 🏛️ El Dicastes: El_Dicastes.md
-  - Events & Activities:
-    - 🎰 Roulette System: Roulette-System.md
-    - 🎲 Comodo Casino: Comodo-Casino.md
-    - 🍀 Auto Events: Auto_Events.md
-    - 🐎 Hugel Mini Games: Hugel_Mini_Game.md
-    - 🏰 War of Emperium: WoE.md
-    - 🏯 Pre-Trans WoE: Pre_Trans_WoE.md
-    - 🏆  King of Emperium (KoE): King_of_Emperium_(KoE).md
-    - ⚔️ PvP Arena: PvP_Arena.md
-    - 🫯 Battlegrounds: Battlegrounds.md
-  
+nav:
+  - Home: index.md
+  - Start Here:
+    - start-here/index.md
+    - How to Start: How_To_Start.md
+    - Beginner Guide: Beginner_Guide.md
+    - Commands: Commands.md
+    - QoL Improvements: Improvements.md
+    - Guild Starter Support: Guild-Starter-Support-System.md
+    - Troubleshooting: Troubleshooting.md
+    - FAQ: FAQ.md
+    - Server Information: Server_Info.md
+    - Server Rules ↗: https://uaro.net/cp/?module=service&action=tos
+    - Download uaRO ↗: https://www.uaro.net/cp/?module=service&action=downloads
+    - Join us on Discord ↗: https://discord.gg/uaro-the-world-of-your-dream-702960460168953946
+  - Systems & Features:
+    - systems/index.md
+    - Town Services:
+      - Main Office: Main_Office.md
+      - Warper System: Warper_System.md
+      - Navigation System: Navigation_System.md
+      - Adventurer Inns: Inns.md
+      - Convenient Dealers: Dealers.md
+      - Custom NPCs: Custom_NPC.md
+      - Costume Converter: Costume_Converter.md
+    - Characters & Items:
+      - Cute Pet System: Pet_System.md
+      - Mercenary System: Mercenary_System.md
+      - Class Changes: Class_Changes.md
+      - Item Changes: Item_Changes.md
+      - Expanded Class Weapons: Expanded-Class-Weapons.md
+  - Content:
+    - content/index.md
+    - Dungeons:
+      - Biolabs 4: Biolab4.md
+      - Old Glast Heim: Old_Glast_Heim.md
+    - Instances:
+      - Instance Guide: Instance_Guide.md
+      - Endless Cellar: Endless_Cellar.md
+      # - Endless Tower: Endless_Tower.md
+      - Horror Toy Factory: Horror_Toy_Factory.md
+      - Eternal Bastion: Eternal_Bastion.md
+      # - Wolfchev's Laboratory: Wolfchevs_Lab.md
+      # - Sealed Shrine: Sealed_Shrine.md
+    - World:
+      - Remastered Novice Grounds: Remastered_Novice_Location.md
+      # - New World Guide: New_World_Guide.md
+      - El Dicastes: El_Dicastes.md
+    - Quests & Rewards:
+      - Hunting Missions: Hunting_Mission.md
+      - Repeatable Quests: Repeatable_Quests.md
+      - Headgear Quests: Dimonka_Headgear_Quest.md
+      - King Frog Hat: King_Frog_Hat.md
+      - Attendance Rewards: Attendance_System.md
+      - Hourly Rewards: Hourly_Rewards_System.md
+  - Events & War:
+    - events/index.md
+    - War & PvP:
+      - War of Emperium: WoE.md
+      - Pre-Trans WoE: Pre_Trans_WoE.md
+      - King of Emperium (KoE): King_of_Emperium_(KoE).md
+      - PvP Arena: PvP_Arena.md
+      - Battlegrounds: Battlegrounds.md
+    - Scheduled Events:
+      - Auto Events: Auto_Events.md
+      - Hugel Mini Games: Hugel_Mini_Game.md
+    - Games of Chance:
+      - Roulette System: Roulette-System.md
+      - Comodo Casino: Comodo-Casino.md
+      - Lottery: Lottery_NPC.md
+    - Seasonal Festivals:
+      - Spring Festival 2026: Spring_Event_2026.md
+      - Summer Festival 2026: Summer_Event_2026.md
+      - Twilight Festival: Twilight_Festival.md
+  - Economy:
+    - economy/index.md
+    - Poring Coins: Poring_Coins_System.md
+    - Vendor System: Vendor_System.md
+    - Card Exchange: Card_Exchange.md
+    - Modified Sales Prices: Modified_Sales_Prices.md
+    - Donations: Donations.md
+  - Patch Notes: All_Patch_Notes.md
+
 # Markdown extensions
 markdown_extensions:
   # Table of contents with anchor links
