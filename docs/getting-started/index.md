@@ -1,10 +1,10 @@
 # Getting Started
 
-New to uaRO? Start here: creating an account, first steps, commands and where to get help.
+New to uaRO? Start here.
 
 <div class="grid cards" markdown>
 
-- [**How to Start**](../How_To_Start.md)
+- [**How to start**](../How_To_Start.md)
 
     Create an account, download the client and log in.
 
@@ -20,7 +20,7 @@ New to uaRO? Start here: creating an account, first steps, commands and where to
 
     The quality of life changes that set uaRO apart.
 
-- [**Guild Starter Support**](../Guild-Starter-Support-System.md)
+- [**Guild Starter Support System**](../Guild-Starter-Support-System.md)
 
     Extra help for newly created guilds.
 

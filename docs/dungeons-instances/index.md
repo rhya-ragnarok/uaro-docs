@@ -1,12 +1,10 @@
 # Dungeons & Instances
 
-Tough dungeons and party instances, with the rules and resets for each.
+Dungeons, party instances and the New World.
+
+## Dungeons
 
 <div class="grid cards" markdown>
-
-- [**Instance Guide**](../Instance_Guide.md)
-
-    Rules, limits and resets for all instances.
 
 - [**Biolabs 4**](../Biolab4.md)
 
@@ -15,6 +13,16 @@ Tough dungeons and party instances, with the rules and resets for each.
 - [**Old Glast Heim**](../Old_Glast_Heim.md)
 
     An advanced dungeon instance.
+
+</div>
+
+## Instances
+
+<div class="grid cards" markdown>
+
+- [**Instance Guide**](../Instance_Guide.md)
+
+    Rules, limits and resets for all instances.
 
 - [**Endless Cellar**](../Endless_Cellar.md)
 
@@ -27,5 +35,15 @@ Tough dungeons and party instances, with the rules and resets for each.
 - [**Eternal Bastion**](../Eternal_Bastion.md)
 
     100 waves and a random final boss.
+
+</div>
+
+## New World
+
+<div class="grid cards" markdown>
+
+- [**El Dicastes**](../El_Dicastes.md)
+
+    The New World expedition.
 
 </div>

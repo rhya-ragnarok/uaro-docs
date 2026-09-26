@@ -1,8 +1,24 @@
-# Events & PvP
+# Events & Activities
 
-Guild wars, PvP and scheduled events.
+Guild wars, PvP, scheduled events and games.
 
 <div class="grid cards" markdown>
+
+- [**Roulette System**](../Roulette-System.md)
+
+    Spin for items.
+
+- [**Comodo Casino**](../Comodo-Casino.md)
+
+    Games and reward tables.
+
+- [**Auto Events**](../Auto_Events.md)
+
+    Events that run automatically.
+
+- [**Hugel Mini Games**](../Hugel_Mini_Game.md)
+
+    Monster races and more.
 
 - [**War of Emperium**](../WoE.md)
 
@@ -23,13 +39,5 @@ Guild wars, PvP and scheduled events.
 - [**Battlegrounds**](../Battlegrounds.md)
 
     Team matches for Valor Badges.
-
-- [**Auto Events**](../Auto_Events.md)
-
-    Events that run automatically.
-
-- [**Hugel Mini Games**](../Hugel_Mini_Game.md)
-
-    Monster races and more.
 
 </div>
