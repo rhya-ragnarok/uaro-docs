@@ -186,10 +186,15 @@ code.copyable:focus-visible {
     }
 }
 
-/* Cookie banner: one compact row (title and message on the left, buttons on the right), no page overlay,
-   no per-cookie checkbox, and Reject styled as the quieter choice */
+/* Cookie banner: one compact row on the header's purple, with "Cookie Consent:" inline at the start of the message,
+   the buttons on the right, no page overlay, no per-cookie checkbox, and Reject as the quieter choice */
 .md-consent__overlay {
   display: none;
+}
+
+.md-consent__inner {
+  background-color: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
 }
 
 .md-consent__form .md-consent__settings {
@@ -200,17 +205,24 @@ code.copyable:focus-visible {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.5rem 1.5rem;
+  gap: 0.75rem 1.5rem;
+  padding-block: 1.25rem;
 }
 
+/* The title comes from the message's own first words, so it reads as one line: "Cookie Consent: This wiki..." */
 .md-consent__form h4 {
-  margin: 0;
-  white-space: nowrap;
+  display: none;
 }
 
 .md-consent__form p {
   flex: 1 1 24rem;
   margin: 0;
+  color: inherit;
+}
+
+.md-consent__form p::before {
+  content: "Cookie Consent: ";
+  font-weight: 700;
 }
 
 .md-consent__controls {
@@ -223,15 +235,23 @@ code.copyable:focus-visible {
   margin: 0;
 }
 
-.md-consent__controls .md-button[type="reset"] {
-  background: transparent;
-  color: var(--uaro-purple-on-bg);
-  border-color: var(--uaro-purple-on-bg);
+/* Accept: white fill; Reject: white outline */
+.md-consent__controls .md-button[type="submit"],
+.md-consent__controls .md-button:not([type]) {
+  background: #fff;
+  border-color: #fff;
+  color: var(--uaro-purple-900);
 }
 
-.md-consent__controls .md-button[type="reset"]:focus,
-.md-consent__controls .md-button[type="reset"]:hover {
-  background: var(--md-accent-fg-color--transparent);
-  color: var(--uaro-purple-on-bg);
-  border-color: var(--uaro-purple-on-bg);
+.md-consent__controls .md-button[type="reset"] {
+  background: transparent;
+  border-color: #fff;
+  color: #fff;
+}
+
+.md-consent__controls .md-button:focus,
+.md-consent__controls .md-button:hover {
+  background: rgba(255, 255, 255, 0.85);
+  border-color: #fff;
+  color: var(--uaro-purple-900);
 }

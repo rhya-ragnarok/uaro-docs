@@ -301,7 +301,7 @@ extra:
 
   # Cookie consent: Google Analytics only loads after the visitor accepts (EU and Brazil players)
   consent:
-    title: Cookies
+    title: Cookies Consent
     description: >-
       This wiki uses Google Analytics cookies to see which pages are read, so we can improve them.
       They are only set if you accept. You can change your choice at any time from the link in the page footer.
