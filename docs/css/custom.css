@@ -185,3 +185,13 @@ code.copyable:focus-visible {
         transition: none;
     }
 }
+
+/* Cookie banner: buttons on the right, and no per-cookie checkbox (Accept and Reject are the only choices) */
+.md-consent__form .md-consent__settings {
+  display: none !important; /* Material shows it through a checked toggle, which outranks a plain rule */
+}
+
+.md-consent__controls {
+  display: flex;
+  justify-content: flex-end;
+}
