@@ -255,3 +255,13 @@ code.copyable:focus-visible {
   border-color: #fff;
   color: var(--uaro-purple-900);
 }
+
+/* "Change cookie settings" in the footer jumps to #__consent. The banner's wrapper sits at the end of the page,
+   so the jump scrolled to the bottom; keep the target fixed at the viewport edge so the page stays put. */
+.md-consent {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 0;
+}
