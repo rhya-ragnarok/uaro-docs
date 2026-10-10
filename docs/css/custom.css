@@ -186,12 +186,52 @@ code.copyable:focus-visible {
     }
 }
 
-/* Cookie banner: buttons on the right, and no per-cookie checkbox (Accept and Reject are the only choices) */
+/* Cookie banner: one compact row (title and message on the left, buttons on the right), no page overlay,
+   no per-cookie checkbox, and Reject styled as the quieter choice */
+.md-consent__overlay {
+  display: none;
+}
+
 .md-consent__form .md-consent__settings {
   display: none !important; /* Material shows it through a checked toggle, which outranks a plain rule */
 }
 
+.md-consent__form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1.5rem;
+}
+
+.md-consent__form h4 {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.md-consent__form p {
+  flex: 1 1 24rem;
+  margin: 0;
+}
+
 .md-consent__controls {
   display: flex;
-  justify-content: flex-end;
+  gap: 0.5rem;
+  margin: 0;
+}
+
+.md-consent__controls .md-button {
+  margin: 0;
+}
+
+.md-consent__controls .md-button[type="reset"] {
+  background: transparent;
+  color: var(--uaro-purple-on-bg);
+  border-color: var(--uaro-purple-on-bg);
+}
+
+.md-consent__controls .md-button[type="reset"]:focus,
+.md-consent__controls .md-button[type="reset"]:hover {
+  background: var(--md-accent-fg-color--transparent);
+  color: var(--uaro-purple-on-bg);
+  border-color: var(--uaro-purple-on-bg);
 }
